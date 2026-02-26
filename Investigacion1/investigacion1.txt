@@ -1,0 +1,46 @@
+Resumen Video:
+El video explica cosas basicas de git
+Git es una herramienta para controlar versiones, actualizar repositorios, clonarlos, agregar archivos, etc.
+Su funcionalidad principal es la de colaborar con multiples miembros sin perder el control entre versiones de un proyecto.
+Las funciones principales son:
+git init
+git add
+git clone
+git pull
+git push
+git log
+git status
+entre otras funciones utiles para manejar las versiones de un proyecto.
+Git es la herramienta principal para actualizar repositorios de manera remota en github, gracias a git push, tmabien permite la clonacion de estos repositorios y sus versiones anteriores con git clone, esto permitiendo el manejo de veriones.
+Gracias a todas estas opciones git permite tener diferentes "ramas" de un proyecto.
+
+
+Preguntas:
+1. ¿Qué es GIT?
+  Es un sistema de control de versiones, creado por el creador de Linux, Linus Torvald, este sistema
+  permite llevar un control de versiones, trabajar de manera colaborativa, revertir cambios, etc.
+2. ¿Cuáles son los comandos más importantes y para que sirven?
+  Para la configuracion inicial:
+    git config --global user.name "nombre" - Configurar nombre de usuario
+    git config --global user.email "email" - Configurar email
+  Comandos Basicos:
+    git init - Inicializar un repositorio Git
+    git clone- Clonar un repositorio existente
+    git add - Añadir archivos al área de staging
+    git commit - Crear un commit con los cambios
+    git status - Ver el estado de los archivos
+    git log - Ver el historial de commits
+3. ¿Cuál es la diferencia entre Git y Github?
+  Git es la herramienta/software que permite el control de versiones, esta herramienta funciona principalmente de manera local
+  por otro lado github es la plataforma web/servicio que aloja repositorios en la nube, esta pagina web
+  se complementa con git al momento de subir los respositorios y actualizar sus versiones.
+4. Enumere los comandos para subir cambios a un repositorio.
+  los principales comandos para subir cambios son:
+    git push - Subir cambios al repositorio remoto
+    git pull - Traer cambios del repositorio remoto
+    git fetch - Descargar cambios sin fusionarlos
+5. ¿Qué es una branch?
+  una branch es una "rama" del proyecto, es decir, una version en especifico
+  la rama principal suele llamarse "main", pueden exister otras ramas activas de desarrollo en paralelo
+  esto con el fin de aislar cambios para luego decidir si fusionarlos a la branch principal.
+  Esto es con el fin de mejorar la colaboracion y orden entre los desarrolladores.
