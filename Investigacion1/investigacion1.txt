@@ -1,5 +1,5 @@
 Resumen Video:
-El video explica cosas basicas de git
+El video explica cosas basicas de git aaa
 Git es una herramienta para controlar versiones, actualizar repositorios, clonarlos, agregar archivos, etc.
 Su funcionalidad principal es la de colaborar con multiples miembros sin perder el control entre versiones de un proyecto.
 Las funciones principales son:

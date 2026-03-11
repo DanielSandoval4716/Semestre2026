@@ -1,0 +1,15 @@
+/home/fist/ra/codes/programacion26/Ses3_P1/Desafio3/bin/Debug/net9.0/Desafio3
+/home/fist/ra/codes/programacion26/Ses3_P1/Desafio3/bin/Debug/net9.0/Desafio3.deps.json
+/home/fist/ra/codes/programacion26/Ses3_P1/Desafio3/bin/Debug/net9.0/Desafio3.runtimeconfig.json
+/home/fist/ra/codes/programacion26/Ses3_P1/Desafio3/bin/Debug/net9.0/Desafio3.dll
+/home/fist/ra/codes/programacion26/Ses3_P1/Desafio3/bin/Debug/net9.0/Desafio3.pdb
+/home/fist/ra/codes/programacion26/Ses3_P1/Desafio3/obj/Debug/net9.0/Desafio3.GeneratedMSBuildEditorConfig.editorconfig
+/home/fist/ra/codes/programacion26/Ses3_P1/Desafio3/obj/Debug/net9.0/Desafio3.AssemblyInfoInputs.cache
+/home/fist/ra/codes/programacion26/Ses3_P1/Desafio3/obj/Debug/net9.0/Desafio3.AssemblyInfo.cs
+/home/fist/ra/codes/programacion26/Ses3_P1/Desafio3/obj/Debug/net9.0/Desafio3.csproj.CoreCompileInputs.cache
+/home/fist/ra/codes/programacion26/Ses3_P1/Desafio3/obj/Debug/net9.0/Desafio3.sourcelink.json
+/home/fist/ra/codes/programacion26/Ses3_P1/Desafio3/obj/Debug/net9.0/Desafio3.dll
+/home/fist/ra/codes/programacion26/Ses3_P1/Desafio3/obj/Debug/net9.0/refint/Desafio3.dll
+/home/fist/ra/codes/programacion26/Ses3_P1/Desafio3/obj/Debug/net9.0/Desafio3.pdb
+/home/fist/ra/codes/programacion26/Ses3_P1/Desafio3/obj/Debug/net9.0/Desafio3.genruntimeconfig.cache
+/home/fist/ra/codes/programacion26/Ses3_P1/Desafio3/obj/Debug/net9.0/ref/Desafio3.dll
