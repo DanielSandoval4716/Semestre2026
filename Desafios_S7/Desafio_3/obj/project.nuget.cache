@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "lvbqeF2QYv4=",
+  "success": true,
+  "projectFilePath": "/home/fist/ra/codes/programacion26/Desafios_S7/Desafio_3/Desafio_3.csproj",
+  "expectedPackageFiles": [
+    "/home/fist/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.14/microsoft.aspnetcore.app.ref.9.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}

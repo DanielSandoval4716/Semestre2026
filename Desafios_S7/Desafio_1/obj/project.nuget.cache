@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qpEzVemOS8A=",
+  "success": true,
+  "projectFilePath": "/home/fist/Downloads/wa/mrdsva/Desafios/Desafio_1/Desafio_1.csproj",
+  "expectedPackageFiles": [
+    "/home/fist/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.14/microsoft.aspnetcore.app.ref.9.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}
