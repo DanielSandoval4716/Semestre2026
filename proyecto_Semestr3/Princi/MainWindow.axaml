@@ -1,0 +1,79 @@
+<Window xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="Princi.MainWindow" x:CompileBindings="False" Title="Login" Width="450" Height="700" WindowStartupLocation="CenterScreen" Background="{StaticResource BrushFondo}">
+  <Grid Background="#F0F4F8">
+    <Border CornerRadius="16" Padding="32" BoxShadow="0 8 30 0 #25000000" Background="White" Width="420" VerticalAlignment="Center" HorizontalAlignment="Center">
+      <Grid>
+        <StackPanel Margin="30" Spacing="12" VerticalAlignment="Center" x:Name="login">
+          <TextBlock Text="Iniciar Sesión" FontSize="22" FontWeight="Bold" HorizontalAlignment="Center"/>
+          <TextBox x:Name="tusr" PlaceholderText="Usuario"/>
+          <TextBox x:Name="tpass" PlaceholderText="Contraseña" PasswordChar="*"/>
+          <StackPanel x:Name="rolsel" IsVisible="False" Spacing="6">
+            <TextBlock Text="Registrarse como:"/>
+            <RadioButton x:Name="rbAlumno" Content="Alumno" IsChecked="True"/>
+            <RadioButton x:Name="rbMaestro" Content="Maestro"/>
+            <Button Content="Confirmar Registro" HorizontalAlignment="Stretch" Click="Reg"/>
+          </StackPanel>
+          <TextBlock x:Name="lblMensaje" Foreground="Red" HorizontalAlignment="Center"/>
+          <Button Content="Iniciar Sesión" HorizontalAlignment="Stretch" Click="Log"/>
+          <Button x:Name="btnRegistro" Content="Registrarse" HorizontalAlignment="Stretch" Click="mostrar_regis"/>
+        </StackPanel>
+
+        <ScrollViewer x:Name="panelAlumno" IsVisible="False">
+          <StackPanel Spacing="12" Margin="10">
+            <TextBlock Text="Portal Alumno" FontSize="22" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="meAl" HorizontalAlignment="Center" Foreground="Gray"/>
+            <TextBox x:Name="txtBC" PlaceholderText="Buscar por nombre del curso" TextChanged="BuscCursos"/>
+            <Button Content="Limpiar búsqueda" Click="LimpCursos"/>
+            <Grid ColumnDefinitions="*,Auto,Auto" Margin="8,4" Background="#E8E8E8">
+                <TextBlock Grid.Column="0" Text="Curso" FontSize="14" FontWeight="Bold" Foreground="#2C3E50"/>
+                <TextBlock Grid.Column="1" Text="Maestro" FontSize="14" FontWeight="Bold" Foreground="#2C3E50" Margin="10,0,0,0"/>
+                <TextBlock Grid.Column="2" Text="Punteo" FontSize="14" FontWeight="Bold" Foreground="#2C3E50" Margin="10,0,0,0"/>
+            </Grid>
+            <ListBox x:Name="dgCursos" Height="200" Background="White">
+              <ListBox.ItemTemplate>
+                <DataTemplate>
+                  <Grid ColumnDefinitions="*,Auto,Auto" Margin="8,4" Background="#F9F9F9">
+                    <TextBlock Grid.Column="0" Text="{Binding Nombre}" FontSize="14" Foreground="#2C3E50"/>
+                    <TextBlock Grid.Column="1" Text="{Binding Maestro}" FontSize="14" Foreground="#2C3E50" Margin="10,0,0,0"/>
+                    <TextBlock Grid.Column="2" Text="{Binding Punteo}" FontWeight="Bold" FontSize="14" Foreground="#E74C3C" Margin="10,0,0,0"/>
+                  </Grid>
+                </DataTemplate>
+              </ListBox.ItemTemplate>
+            </ListBox>
+            <TextBlock x:Name="txtProm" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" Foreground="#2ECC71"/>
+            <Button Content="Cerrar sesión" HorizontalAlignment="Stretch" Click="cerr_ses"/>
+          </StackPanel>
+        </ScrollViewer>
+      
+        <ScrollViewer x:Name="panelMaestro" IsVisible="False">
+          <StackPanel Spacing="10" Margin="10">
+            <TextBlock Text="Portal Maestro" FontSize="22" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="meMa" Foreground="#2C3E50"/>
+            <TextBox x:Name="txtCurso" PlaceholderText="Nombre curso"/>
+            <Button Content="Crear Curso" Click="CrearCurso"/>
+            <TextBlock Text="Cursos" Foreground="#2C3E50"/>
+            <ComboBox x:Name="cmbCursos"/>
+            <TextBlock Text="Alumnos" Foreground="#2C3E50"/>
+            <ComboBox x:Name="cmbAlumnos"/>
+            <Button Content="Asignar Alumno" Click="AsignarAlumno"/>
+            <TextBox x:Name="txtNota" PlaceholderText="Nota"/>
+            <Button Content="Guardar Nota" Click="GuardarNota"/>
+            <TextBox x:Name="txtBA" PlaceholderText="Buscar alumno..." TextChanged="BuscAlumnos"/>
+            <Button Content="Limpiar búsqueda" Click="LimpAlumnos"/>
+            <ListBox x:Name="dgAlumnosCurso" Height="200" Background="White">
+              <ListBox.ItemTemplate>
+                <DataTemplate>
+                  <Grid ColumnDefinitions="*,Auto,Auto" Margin="8,4" Background="#F9F9F9">
+                    <TextBlock Grid.Column="0" Text="{Binding Nombre}" FontSize="14" Foreground="#2C3E50"/>
+                    <TextBlock Grid.Column="1" Text="{Binding Punteo}" FontWeight="Bold" FontSize="14" Foreground="#E74C3C" Margin="10,0,0,0"/>
+                  </Grid>
+                </DataTemplate>
+              </ListBox.ItemTemplate>
+            </ListBox>
+            <Button Content="Ver alumnos del curso" Click="VerCurso"/>
+            <Button Content="Cerrar sesión" Click="cerr_ses"/>
+          </StackPanel>
+        </ScrollViewer>
+      </Grid>
+    </Border>
+  </Grid>
+</Window>
